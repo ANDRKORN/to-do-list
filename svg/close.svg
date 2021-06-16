@@ -1,0 +1,7 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="close">
+<path id="Path 2" d="M25.7497 25.7496L9.25054 9.25044" stroke="black" stroke-linecap="round"/>
+<path id="Path 2_2" d="M25.7495 9.25044L9.2503 25.7496" stroke="black" stroke-linecap="round"/>
+<path d="M0 0V-2H-2V0H0ZM35 0H37V-2H35V0ZM35 35V37H37V35H35ZM0 35H-2V37H0V35ZM0 2H35V-2H0V2ZM33 0V35H37V0H33ZM35 33H0V37H35V33ZM2 35V0H-2V35H2Z" fill="black"/>
+</g>
+</svg>

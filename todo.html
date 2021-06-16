@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/icon_main.png" sizes="512x512" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MY TO DO</title>
+</head>
+
+<body>
+    <div class="deleteAlert">
+        <div class="deleteMain container">
+            <div class="deleteInfo"></div>
+            <div class="blockButton">
+                <button id='yes'>Да</button>
+                <button id='no'>Нет</button>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header_container_logo">
+                <img src="svg/logo.svg" alt="logo">
+                <span>Todo</span>
+            </div>
+            <div class="header_container_nav">
+                <div class="header_container_nav_menu">
+                    <div class="container">
+                        <img src="svg/close.svg" alt="" class="close_menu">
+                    </div>
+                    <nav class="header_container_nav_menu_item">
+                        <ul>
+                            <li>
+                                <a class="my_list" href="#">Мои списки </a>
+                            </li>
+                            <li>
+                                <a class="my_profile" href="#">Мой профиль </a>
+                            </li>
+                            <li>
+                                <a class="exit" href="#">Выйти </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <img src="svg/menu.svg" alt="menu" class="open_menu">
+            </div>
+        </div>
+    </header>
+    <section class="main">
+
+        <div class="container">
+            <div class="arr_list">
+                <ul class="ul_list">
+
+                </ul>
+            </div>
+            <input type="text" class="name_new_list" style="display: none;" value="" placeholder='Название списка'></input>
+            <div class="new_list">
+                Создать новый список +
+            </div>
+            <div class="arr_task" id="arr_task">
+
+            </div>
+            <img src="svg/add.svg" alt="" class="add_task" style="display: none;">
+        </div>
+
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #FFFEFC;
+        }
+        
+        body,
+        h1,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        input {
+            border: none;
+            outline: none;
+        }
+        
+        input::-moz-focus-inner {
+            border: none;
+        }
+        
+        header {
+            background: #D4E2D4;
+        }
+        
+        .container {
+            width: 320px;
+            margin: 0 auto;
+        }
+        
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px auto;
+            padding: 18px 0;
+        }
+        
+        .header_container_logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header_container_logo a {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+        
+        .header_container_logo span {
+            margin-left: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 400px;
+            text-align: center;
+        }
+        
+        .header_container_logo img,
+        .header_container_nav img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .header_container_nav {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .header_container_nav_menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ecb390d7;
+        }
+        
+        .header_container_nav_menu img {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            left: 285px;
+        }
+        
+        .header_container_nav_menu_item {
+            width: 225px;
+            margin: 70px auto 0 auto;
+            text-align: center;
+        }
+        
+        .header_container_nav_menu_item li+li {
+            margin-top: 30px;
+        }
+        
+        .header_container_nav_menu_item a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+        }
+        
+        .new_list {
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            border: 1px solid #D4E2D4;
+            border-radius: 10px;
+            margin: 150px auto 20px;
+            padding: 35px 8px;
+            background: #D4E2D4;
+        }
+        
+        .main .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .name_new_list {
+            text-align: center;
+            padding: 0 20px;
+            height: 18px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 25px;
+            border-bottom: 2px solid #D4E2D4;
+            margin: 100px auto 38px;
+        }
+        
+        .main_task {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+        
+        .task {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .nameTask {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            width: 273px;
+            height: 50px;
+            background-color: #D4E2D4;
+            margin-right: 10px;
+        }
+        
+        .input_task {
+            width: 198px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            background-color: #D4E2D4;
+        }
+        
+        .ready_img {
+            margin-left: 10px;
+        }
+        
+        .add_little {
+            margin-right: 5px;
+        }
+        
+        .task_little {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+        }
+        
+        .nameTask_little {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 10px;
+            width: 207px;
+            height: 40px;
+            background: #D4E2D4;
+            border-radius: 10px;
+        }
+        
+        .input_task_little {
+            width: 160px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            background: #D4E2D4;
+        }
+        
+        .deleteAlert {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(212, 226, 212, 0.8);
+        }
+        
+        .deleteMain {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 0px;
+            width: 263px;
+            height: 130px;
+            background: #FFFEFC;
+            border: 2px solid rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .deleteInfo {
+            margin: 25px 0 20px;
+        }
+        
+        .blockButton button {
+            width: 80px;
+            height: 35px;
+            border: 2px solid #D4E2D4;
+            border-radius: 10px;
+            margin: 0 10px 20px;
+        }
+        
+        .blockButton button:hover {
+            background: #D4E2D4;
+        }
+        
+        .main li {
+            position: relative;
+            z-index: -1;
+            margin: 30px 0 20px;
+            width: 200px;
+            background-color: #D4E2D4;
+            border: 2px solid #D4E2D4;
+            border-radius: 10px;
+        }
+        
+        .main li a {
+            padding-left: 10px;
+            color: black;
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300px;
+            font-size: 25px;
+            line-height: 60px;
+            display: block;
+        }
+        
+        li img {
+            position: absolute;
+            top: 15px;
+            right: -40px;
+            z-index: -1;
+        }
+        
+        .how_many_ready {
+            text-align: center;
+        }
